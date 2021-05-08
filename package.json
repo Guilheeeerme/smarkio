@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --inspect --transpile-only src/server.ts",
-    "typeorm": "ts-node-dev/s node_modules/typeorm/cli.js"
+    "typeorm": "ts-node-dev node_modules/typeorm/cli.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.11",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "mysql2": "^2.2.5",
     "typeorm": "^0.2.32"
   }
 }
