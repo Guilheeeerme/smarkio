@@ -22,5 +22,5 @@ AJAX.
 
 # Resolução e instruções para executar a aplicação:
 
-- [Backend](https://www.ibm.com/cloud/watson-text-to-speech)
+- [Backend](https://github.com/Guilheeeerme/smarkio/tree/master/backend#readme)
 - Frontend (em desenvolvimento)
