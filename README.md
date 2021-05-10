@@ -23,4 +23,4 @@ AJAX.
 # Resolução e instruções para executar a aplicação:
 
 - [Backend](https://github.com/Guilheeeerme/smarkio/tree/master/backend#readme)
-- Frontend (em desenvolvimento)
+- Frontend (em desenvolvimento) Ainda não realizado, foquei em aperfeiçoar o backend por ter mais conhecimento, mas o front ainda está pendente, levando em conta o prazo.
