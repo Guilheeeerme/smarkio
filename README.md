@@ -1,48 +1,26 @@
-# Backend
+# SMARKIO
 
-## ⚙ Requisitos
+## Teste prático de programação
 
-- Node.js e Npm ou Yarn (Npm já vem junto com o Node.js)
+**Objetivo**:
 
-## 🔥 Instalação e execução
+Desenvolver uma aplicação web em Node.js com banco de dados MySQL. </br>
+A aplicação consistirá somente de uma página com dois painéis:
 
-- Faça um clone desse repositório;
-- Dentro da **backend**, execute `npm install` ou `yarn` no terminal para instalar as dependências;
-- Para conectar ao banco de dados, no arquivo **ormconfig.json** altere os valores de `host,port,username,password` e `database` se necessário;
-- No arquivo **.env**, defina os valores de `API_KEY` e `SERVICE_URL` com suas credenciais do **IBM Watson**;
-- Execute `yarn typeorm migration:run` para criar a tabela no banco de dados;
-- Execute `npm run dev` ou `yarn dev` para iniciar o backend; </br> </br>
+- No painel posicionado a esquerda, o
+  usuário poderá cadastrar novos comentários.
+- No painel da direita todos os comentários
+  cadastrados devem ser listados, com um botão ao lado de cada um que ao ser clicado
+  executará um áudio de leitura do comentário.
 
-## Rotas
+Para realizar a conversão do comentário de texto para áudio, o candidato deverá utilizar a [API Text to Speech do IBM Watson](https://www.ibm.com/cloud/watson-text-to-speech) </br>
 
-|    Rota     | HTTP Method |     Descrição     |
-| :---------: | :---------: | :---------------: |
-| `/comments` |    POST     | Criar comentário. |
-
-</br>
-
-Body: Vai ser criado o comentário e um arquivo de audio que vai ser salvo com um hash na pasta **src/tmp**
-
-```json
-{
-  "comment": "Exemplo de comentário"
-}
-```
-
-Response:
-
-```json
-{
-  "id": 1,
-  "comment": "Exemplo de comentário",
-  "comment_url": "http://localhost:3333/stream/tmp/hash.wav",
-  "created_at": "2021-05-10T19:26:24.250Z"
-}
-```
+As operações de cadastro e atualização da lista de comentários devem ser realizadas via
+AJAX.
 
 </br>
 
-| Rota            | HTTP Method |        Descrição         |
-| :-------------- | :---------: | :----------------------: |
-| `/comments`     |     GET     | Lista todos comentários. |
-| `/comments/:id` |     GET     | Lista comentário por ID. |
+# Resolução e instruções para executar a aplicação:
+
+- [Backend](https://www.ibm.com/cloud/watson-text-to-speech)
+- Frontend (em desenvolvimento)
