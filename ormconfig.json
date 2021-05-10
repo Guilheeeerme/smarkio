@@ -2,16 +2,16 @@
   "type": "mysql",
   "host": "localhost",
   "port": 3306,
-  "username": "test",
-  "password": "test",
-  "database": "test",
+  "username": "root",
+  "password": "admin",
+  "database": "smarkio",
   "synchronize": true,
   "logging": false,
-  "entities": ["src/entity/**/*.ts"],
+  "entities": ["src/entities/*.ts"],
   "migrations": ["src/database/migrations/*.ts"],
 
   "cli": {
-    "entitiesDir": "src/entity",
+    "entitiesDir": "src/models",
     "migrationsDir": "src/database/migrations"
   }
 }
