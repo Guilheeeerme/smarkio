@@ -18,7 +18,7 @@ class CreateCommentController {
     const file = await ibmService.getTextToSpeech(comment);
 
     // console.log(file);
-    const comment_url = `http://localhost:3333/stream/tmp/${file}.wav`;
+    const comment_url = `http://localhost:3333/stream/${file}.wav`;
 
     const createCommentUseCase = container.resolve(CreateCommentUseCase);
 

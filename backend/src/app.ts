@@ -16,7 +16,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use("/stream", express.static(path.join(__dirname, "tmp")));
+app.use("/stream", express.static(path.resolve(__dirname, "tmp")));
 
 app.use(cors());
 app.use(router);
