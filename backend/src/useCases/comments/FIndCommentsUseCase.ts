@@ -1,6 +1,6 @@
 import { inject, injectable } from "tsyringe";
-import { Comment } from "../../entities/Comment";
 
+import { Comment } from "../../entities/Comment";
 import { ICommentsRepository } from "../../repositories/ICommentsRepository";
 
 @injectable()

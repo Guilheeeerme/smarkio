@@ -3,10 +3,15 @@ import { container } from "tsyringe";
 
 import { CreateCommentUseCase } from "./CreateCommentUseCase";
 import { IbmService } from "../IBM/WatsonService";
+import { AppError } from "../../errors/AppError";
 
 class CreateCommentController {
   async handle(request: Request, response: Response): Promise<Response> {
     const { comment } = request.body;
+
+    if (!comment) {
+      throw new AppError(400);
+    }
 
     const ibmService = new IbmService();
 
