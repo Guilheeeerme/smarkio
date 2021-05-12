@@ -14,17 +14,21 @@
     <title>Challenge</title>
   </head>
   <body>
-    <div>
-      <form>
-        <label for="comment">Comentário</label>
-        <textarea name="comment" id="comment" cols="40" rows="10"></textarea>
-        <button type="submit" class="btn">Cadastrar</button>
-      </form>
-    </div>
-    <div>
-      <p class="title">Comentários</p>
-
-      <section id="list"></section>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-4">
+          <form>
+            <div class="form-group">
+              <label for="comment">Comentário</label>
+              <textarea class="form-control" id="comment" rows="10"></textarea>
+              <button type="submit" class="btn btn-primary" id="btn">
+                Cadastrar
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="" id="list"><h5>Comentários</h5></div>
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

@@ -14,9 +14,9 @@ function main() {
 
   for (let comentario of comments) {
     output += `
-    <div class="classAudio">
+    <div class="container-audio">
       <span class="comment">${comentario.comment}</span>
-      <button onclick="play(${comentario.id})">Ouvir</button>
+      <button class="btn btn-primary btn-listen" onclick="play(${comentario.id})">Ouvir</button>
       <audio preload="none" id="${comentario.id}">
         <source src="${comentario.comment_url}" type="audio/wav">
       </audio>
@@ -24,7 +24,7 @@ function main() {
     `;
   }
 
-  document.getElementById("list").innerHTML = output;
+  document.getElementById("list").innerHTML += output;
 }
 
 function play(id) {

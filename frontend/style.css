@@ -1,6 +1,5 @@
-body {
-  display: flex;
-  justify-content: space-around;
+.container {
+  margin-top: 40px;
 }
 
 label {
@@ -8,21 +7,28 @@ label {
   margin-bottom: 10px;
 }
 
-.btn {
+.btn-primary {
   display: block;
-  margin-top: 2px;
+  margin-top: 10px;
   width: 100%;
 }
 
-.classAudio {
+.btn-listen {
+  width: 80px;
+}
+
+.container-audio {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 10px;
 }
 
+h5 {
+  text-align: center;
+}
+
 .comment {
   margin-right: 10px;
-  margin-left: 0px;
   width: 50%;
 }
