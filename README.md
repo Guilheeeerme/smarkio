@@ -22,5 +22,5 @@ AJAX.
 
 # Resolução e instruções para executar a aplicação:
 
-- [Backend](https://github.com/Guilheeeerme/smarkio/tree/master/backend#readme)
-- Frontend (em desenvolvimento) Ainda não realizado, foquei em aperfeiçoar o backend por ter mais conhecimento, mas o front ainda está pendente, levando em conta o prazo.
+- [Backend](https://github.com/Guilheeeerme/smarkio/tree/master/backend#readme) <-- Instruções para executar o backend
+- [Frontend](https://github.com/Guilheeeerme/smarkio/tree/master/frontend) Com o backend em execução basta acessar o arquivo `index.html` da pasta **frontend** , de preferência utilizando o **Live Server** para funcionar corretamente.
